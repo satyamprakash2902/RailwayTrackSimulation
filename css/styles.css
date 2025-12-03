@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; display: flex; flex-direction: column; height: 100vh; }
+#controls { padding: 10px; background: #f0f0f0; border-bottom: 1px solid #ccc; }
+#dashboard { display: flex; flex: 1; }
+#map { flex: 2; height: 100%; }
+#panels { flex: 1; padding: 10px; overflow-y: auto; background: #fafafa; }
+.panel { margin-bottom: 20px; border: 1px solid #ddd; padding: 10px; background: white; }
+.sensor { margin: 5px 0; }
+.fault { color: red; }
+.alert { background: #ffe6e6; padding: 5px; margin: 5px 0; }
+canvas { max-width: 100%; }

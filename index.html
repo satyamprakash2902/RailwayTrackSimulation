@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Track Simulation</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/styles.css" />  <!-- Links to external CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="controls">
+        <button id="startBtn">Start Simulation</button>
+        <button id="stopBtn">Stop Simulation</button>
+        <button id="resetBtn">Reset</button>
+        <button id="injectFaultBtn">Inject Random Fault</button>
+        <span id="timeDisplay">Sim Time: 0:00</span>
+    </div>
+    <div id="dashboard">
+        <div id="map"></div>
+        <div id="panels">
+            <div class="panel">
+                <h3>Sensor Status</h3>
+                <div id="sensorList"></div>
+            </div>
+            <div class="panel">
+                <h3>UAV Telemetry</h3>
+                <div id="uavTelemetry"></div>
+            </div>
+            <div class="panel">
+                <h3>Fault Alerts</h3>
+                <div id="alerts"></div>
+            </div>
+            <div class="panel">
+                <h3>Heatmap (Sensor Health)</h3>
+                <canvas id="heatmapCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="js/simulation.js"></script>  <!-- Links to external JS -->
+</body>
+</html>
